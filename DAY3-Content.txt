@@ -1,0 +1,87 @@
+LIST:
+
+-> ordered
+-> duplicates allowed
+
+append()- add element at end of list 
+
+extend()- add all ele of a list to another
+
+insert()- insert an ele at defined index
+
+remove()- removes an item from list 
+
+pop()- removes and returns ele at the index
+
+clear()- removes all ele from list
+
+index()-  returns the index of first matched item
+
+count()- returns the count of number of items
+
+sort()-  sort items in list
+
+reverse()-reverse the order of items
+
+copy()-returns a shallow copy of a list
+
+SET:
+
+-> unordered - index not present
+-> duplicates are not allowed
+
+add() - to add one element
+update() - to add more than one element
+
+s.add(element)
+s.update([ 9,7 ])
+s.discard(element)
+s.remove(element) - error if element not present in set
+
+UNION- s1|s2
+INTERSECTION- s1&s2
+DIFFERENCE- s1-s2
+
+s1={6,8}
+s2={6,7,9,8,2,1}
+s2.issuperset(s1) - True
+
+
+TUPLE:
+( )
+ordered
+unchangeable -immutable
+methods- count & index
+index() - raises an exception if value not found
+
+DICTIONARY:
+
+dict contains elements with 2 units
+->keys
+->values
+
+keys must be unique
+
+#can create dict from iterables like list,tuple,range
+d.fromkeys(iterable,value)    - Value is optional
+
+DICT-MAPPING
+d.items() - returns all pairs
+d.update({'c':567}) -add one or more items
+d.pop('b') -fetch and remove item
+d.popitem() - fetch and removes recently added item
+d.setdefault('sam' ,87) - if key not in dict will be added or nothinhg will be done
+d.setdefault(2) -value is optional
+
+
+
+
+
+
+
+
+
+
+
+
+
