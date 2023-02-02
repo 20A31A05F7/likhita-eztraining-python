@@ -1,0 +1,222 @@
+#dict-comprehension
+
+d={n:n*n for n in range(1,5)}
+print(d)
+
+
+#calculating product price for 3 units
+
+old={'rice':70,'sugar':190,'dal':100}
+new={product:price*3 for (product,price) in old.items()}
+print(new)
+
+#with checks
+
+real={'sam':20,'tom':15,'ram':26,'ravi':30}
+now={name:age for (name,age) in real.items() if(age>18)}
+print(now)
+
+#program 1:create a list with 8 customer names.display a dictionary which has customers names along with discounts for them from a particular shop.
+
+import random
+cust=["sam","ram","ravi","siri","sree","devi","mehar","likki"]
+cust_dict={names:random.randint(1,100) for names in cust}
+print(cust_dict)
+
+#using two lists
+
+l1=["a","b","c"]
+l2=[1,2,3]
+d1={a:b for (a,b) in zip(l1,l2)
+print(d1)
+
+#program 2:
+#student names,marks(out of 500)
+#5 subjects -dictionary
+#with names and percentage
+
+import random
+names=list(map(str,input("enter names:").split()))
+marks=[]
+for i in range(len(names)):
+     a=(random.randint(200,500)/500)*100
+     marks.append(a)
+dict={a:b for (a,b) in zip(names,marks)}
+print(dict)
+
+
+#strings........
+
+
+s="ramya"
+>>> s1="sree"
+>>> s+s1
+'ramyasree'
+>>> s*3
+'ramyaramyaramya'
+>>> s.upper()
+'RAMYA'
+>>> s.lower()
+'ramya'
+>>> s.title()
+'Ramya'
+>>> s.casefold()
+'ramya'
+>>> s.capitalize()
+'Ramya'
+>>> s.replace('r','s')
+'samya'
+>>> str="sri bhavya"
+>>> str.title()
+'Sri Bhavya'
+>>> str.capitalize()
+'Sri bhavya'
+>>> str.strip()
+'sri bhavya'
+>>> s2='      sri      '
+>>> s2.strip()
+'sri'
+>>> str.split()
+['sri', 'bhavya']
+>>> str.split('.')
+['sri bhavya']
+>>> str.split('a')
+['sri bh', 'vy', '']
+>>> str.split('s')
+['', 'ri bhavya']
+
+st="likkkkiiiiiiiii"
+>>> st.count('k')
+4
+>>> st.count('i',4,len(st))
+9
+>>> st.index('i',4,len(st))
+6
+>>> st.find('i',0,len(st))
+1
+>>> st.rfind('i',0,len(st))
+14
+>>> st.find('a',0,len(st))
+-1
+str.islower()
+True
+>>> str.isupper()
+False
+>>> s1.istitle()
+False
+>>> max(s)
+'y'
+>>> s1.startswith('sr',0,len(s))
+True
+s.endswith('sr',0,len(s))
+False
+>>> s.rfind('k',0,len(s))
+-1
+>>> st.rfind('k',0,len(st))
+5
+st.center(10,'*')
+'likkkkiiiiiiiii'
+>>> st.center(30,'*')
+'*******likkkkiiiiiiiii********'
+
+
+x=300
+>>> x
+300
+>>> x=x*3
+>>> x
+900
+>>> id(x)
+1865365645616
+>>> x=10
+>>> x
+10
+>>> id(x)
+1865327798864
+l=[10,2,"sam"]
+>>> l
+[10, 2, 'sam']
+>>> l.pop(2)
+'sam'
+>>> l
+[10, 2]
+>>> id(l)
+1865334092032
+>>> l.append(1)
+>>> l
+[10, 2, 1]
+>>> id(l)
+1865334092032
+
+
+
+#character present or not
+
+s=input("enter str:")
+ch=input("enter char:")
+if ch in s:
+       print("yes")
+else:
+       print("no")
+
+#second logic(iteration)
+str=input("enter a string:")
+char=input("enter a character:")
+for i in str:
+    if(i==char):
+        flag=1
+        break
+    else:
+        flag=0
+if(flag==1):
+    print("char is present",char)
+else:
+    print("char is not present",char)
+
+#nxt concept
+st=input("enter str:")
+ch=input("enter chr:")
+a="yes" if ch in st else "no"
+print(a)
+
+#palindrome
+str=input("enter a string:")
+if(str==str[::-1]):
+    print("str is a palindrome:",str)
+else:
+    print("not a palindrome:",str)
+
+#space present or not -count
+s=input("enter a string:")
+count=0
+for i in s:
+    if(i==" "):
+        count+=1
+print(count)
+
+#count of vowels
+
+l=['a','e','i','o','u','A','E','I','O','U']
+s=input("enter a string:")
+count=0
+for i in s:
+    if i in l:
+        count+=1
+print(count)
+
+
+#math module
+
+import math
+print("ceil of 12.1:",math.ceil(12.9))
+print("floor of 12.1:",math.floor(12.9))
+print("sqrt of 16:",math.sqrt(16))
+print("factorial of 5:",math.factorial(5))
+print("power of 3,4:",math.pow(3,4))
+print("remainder of 12,9:",math.fmod(12,9))
+a,b=divmod(12,9)
+print(a,b)
+    
+    
+
+
