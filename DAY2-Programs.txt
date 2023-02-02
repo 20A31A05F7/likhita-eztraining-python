@@ -1,0 +1,178 @@
+BITWISE OPERATORS:
+
+a,b=map(int,input("enter:").split(","))
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+print(a<<2)
+print(b>>2)
+
+FOR LOOP:
+
+#product of 10 integers using for loop
+
+product=1
+for i in range(1,11):
+ product=product*i
+print(product)
+
+for i in range(1,11):
+    print(i)
+for i in range(1,11,2):
+    print(i)
+for i in range(2,11,2):
+    print(i)
+    
+
+WHILE LOOP:
+
+#even
+i=2
+while(i%2==0 and i<=30):
+      print(i)
+      i=i+2
+
+#odd
+i=1
+while(i%2!=0 and i<=30):
+      print(i)
+      i=i+2
+
+
+CONDITIONAL STATEMENTS:
+
+#check whether it is 500 or not	
+
+num=int(input("enter a number:"))
+if(num==500):
+   print("yes,it is 500")
+else:
+   print("no,it is not 500") 
+
+#else-if ladder
+
+t=int(input("Temperature:"))
+if(t>45):
+    print("hottest")
+elif(t>=40 & t<=45):
+    print("hot")
+elif(t>=25 & t<=40):
+    print("moderate")
+elif(t>=10 & t<=25):
+    print("cold")
+else:
+    print("chill")
+
+
+#check whether it is float or int....
+
+n=input("enter a number:")
+if '.' in n:
+    print("it is float")
+else:
+    print("integer")
+
+
+#second logic
+n1=5
+if(n1==int(n1)):
+    print("the number is integer")
+else:
+    print("the number is float")
+
+#third logic
+n2=4.5
+if(isinstance(n2,float)==True):
+    print("float")
+else:
+    print("int")
+
+#fourth logic
+n3=5.8
+if n3%1==0:
+    print("int")
+else:
+    print("float")
+
+#fifth logic
+n4=9
+if type(n4)==int:
+    print("int")
+else:
+    print("float")
+
+#sixth logic
+num=9.8
+res=num-int(num)
+if(res>0 or res!=0):
+    print("float")
+else:
+    print("integer")
+
+#check whether even-positive or even-negative or odd-positive or odd-negative
+
+n=int(input("given number:"))
+if(n%2==0 and n>0):
+    print("even-positive")
+elif(n%2!=0 and n>0):
+     print("odd-positive")
+elif(n%2==0 and n<0):
+     print("even-negative")
+else:
+    print("odd-negative")
+
+#biggest among 2 nos
+
+a,b=list(map(int,input("enter a number:").split(",")))
+if(a>b):
+  print("The biggest number is",a)
+else:
+  print("The biggest number is",b)
+
+#greatest among 3 nos
+
+a,b,c=list(map(int,input("enter numbers:").split()))
+if(a>b and a>c):
+    print("greatest number is ",a)
+elif(b>a and b>c):
+    print("greatest number is ",b)
+else:
+    print("greatest number is ",c)
+
+#div by 11
+
+num=int(input("enter a number:"))
+if(num%11==0):
+    print("it is divisible by 11")
+else:
+    print("it is not divisible by 11")
+
+#div by both 2 and 5
+
+num=int(input("Enter a number:"))
+if(num%2==0 and num%5==0):
+    print("it is divisible by both 2 and 5")
+else:
+     print("it is not divisible by both 2 and 5")
+
+
+#guess the number
+
+import random
+n=random.randint(1,100)
+guess=int(input("enter number:"))
+while(n!=guess):
+    if(guess<n):
+        print("too low")
+        guess=int(input("enter number again:"))
+    elif(guess>n):
+        print("too high")
+        guess=int(input("enter number again:"))
+    else:
+        break
+print("you guessed right")
+
+
+
+    
