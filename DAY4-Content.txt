@@ -1,0 +1,72 @@
+mutable  vs immutable:
+
+Mutable - changeable after creation
+Immutable- unchangeable after creation
+
+
+mutable:
+list,set,dictionary
+
+immutable:
+int ,float,string,bool,tuple
+
+STRINGS:
+
+m="hi i'am "likhita""
+SyntaxError: invalid syntax
+>>> n="hi i'am"
+>>> n
+"hi i'am"
+>>> nm='hi'
+>>> n='hi i'am'
+SyntaxError: invalid syntax
+>>> s='hi i\'am'
+>>> s
+"hi i'am"
+
+
+CONCATE- s1+s2
+REPETITION - s*2
+
+s.upper()
+s.lower() or s.casefold()
+s.capitalize()
+s.replace('h','d')
+s.find('a')
+s.strip()
+s.split()  ,s.split('.') ,s.split('a')
+s.center(31,'*')   s.center(width,fillchar)
+    will fix total length then fix string in centre and fill other empty spaces with fill char
+
+s.islower() /s.isupper() /
+s.istitle()- all words start with caps
+max(s) - returns greater char
+min(s)
+s.startswith('hi',0,len(s))
+s.rfind('a',0,len(s)) - from reverse first or last occurence
+s.count('a',0,len(s)) - begins at 5 till end
+s.endswith('b',0,len(s))
+s.index('s',6,len(s)) - from 7 to end where a exists returns first index
+
+
+
+#math module
+ceil()
+floor()
+factorial()
+pow()
+fmod() - remainder
+sqrt()
+
+#
+a,b=divmod(12,9)
+print(a,b) - quotient ,remainder
+
+
+
+
+
+
+
+
+
