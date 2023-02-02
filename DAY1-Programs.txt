@@ -1,0 +1,106 @@
+#unicode characters - telugu
+
+print(chr(3122)+chr(3135)+chr(3094)+chr(3135)+chr(3108))
+
+#type( )
+
+type("a")
+<class 'str'>
+>>> type(90.0)
+<class 'float'>
+>>> Type(2)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    Type(2)
+
+type('True')
+<class 'str'>
+>>> type(True)
+<class 'bool'>
+
+id("sam")
+2392697231664
+>>> isinstance(90,int)
+True
+>>> isinstance("a",str)
+True
+>>> isinstance(90.0,int)
+False
+
+num=678
+>>> 678=n1
+SyntaxError: cannot assign to literal
+
+#print statement
+
+a=90
+print("the value of a is:"+str(a))
+print("the value of a is:",a)
+b="1000"
+print("the value of a :"+b)
+
+
+print("the value of a is:"+a)
+
+#sep,end
+
+print("its","a","good","day",end=' ')
+print("all","is","good",sep="@@",end='')
+print("its","a","good","day",end=' ** ')
+print("all","is","good",end=' ')
+
+OPERATORS:
+
+#arithmetic operators
+
+>>>10%3
+1
+>>> 10/3
+3.3333333333333335
+>>> 10//3
+3
+
+#comparison operators
+
+>>>10<34
+True
+>>> 10!=20
+True
+>>> 10<=2
+False
+>>> 10<=20
+True
+>>> 10==90
+False
+
+#logical operators
+
+10>1 and 10<2
+False
+>>> 10>3 and 10<80
+True
+>>> 10>1 or 10>89
+True
+>>> not(10==10)
+False
+
+#multiple inputs
+
+n=int(input("size:"))
+a=list(map(int,input("numbers").split()))[:n]
+print(a)
+
+n1,n2=int(input("enter:")),int(input("enter:"))
+print(n1*n2)
+
+a,b=input("enter:").split(",")
+print(a+b)
+
+a,b=input("enter:").split()
+print(a*3)
+
+
+
+
+
+
