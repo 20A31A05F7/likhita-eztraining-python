@@ -1,0 +1,83 @@
+->python is famous in the market and it is called as language in future.
+
+->It supports current technologies and upcoming technologies.
+
+MEDIUMS:
+
+IDLE - Integrated Development Learning Environment
+jupyter notebook
+Anaconda
+Vscode
+
+->python is a scripted language
+
+VALID VARIABLE NAMES 
+
+num1=300
+_1num=54
+sum_one=987
+
+INVALID
+
+4x=56
+1num=98
+7=20
+
+->python is case -sensitive
+
+Type(87)- error
+
+
+DATATYPES:
+
+numerical - int,float,complex
+boolean-true false
+sequence-string,list,tuple,dict,set
+
+TYPE CONVERSION:
+
+converting one datatype to another.
+
+>id(90) - address
+>>>isinstance(78,int) 
+True
+
+
+OPERATORS PRECEDENCE AND ASSOCIATIVITY LAW:
+
+every operator has its own priority
+we can use bodmas rule
+if there is same priority operators present in expression, evaluation happens left to right except assignment operator right to left
+
+arithmetic- 
++,-,*,/,//
+//- floor division-integer
+%- rem
+
+comparison-
+==,!=,<,<,<=,>=
+
+logical-
+and ,or,not
+
+bitwise-
+and,or,not,xor,>>,<<
+
+MULTIPLE WAYS TO TAKE TO TAKE TWO/MORE INPUTS IN SAME LINE
+
+n,m=int(input("enter")),int(input("enter"))
+
+seperated by commas
+a,b=input("enter:).split(",")
+
+seperated by space
+a,b=input("enter:).split()
+
+
+
+
+
+
+
+
+
