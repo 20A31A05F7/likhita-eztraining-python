@@ -1,0 +1,171 @@
+int1=int(input("enter the 1st integer:"))
+int2=int(input("enter the 2nd integer:"))
+int3=int(input("enter the 3rd integer:"))
+print("            ")
+float1=float(input("enter the 1st floating number:"))
+float2=float(input("enter the 2nd floating number:"))
+float3=float(input("enter the 3rd floating number:"))
+print("            ")
+str1=(input("enter the 1st string:"))
+str2=(input("enter the 2nd string:"))
+print("            ")
+complex1=complex(input("enter the complex number:"))
+
+print("First Integer:",int1)
+print("second Integer:",int2)
+print("third Integer:",int3)
+print("     ")
+print("First float:",float1)
+print("second float:",float2)
+print("third float:",float3)
+print("       ")
+print("first string:"+str1)
+print("second string:"+str2)
+print("    ")
+print("complex:",complex1)
+
+"""kumar is buying 75 kgs of sugar candy and half of it he gives to his friend Sam.
+Sam returns to kumar half of it what he got.how much does kumar and sam have"""
+kumar=int(input("enter sugar candy with kumar in kgs:"))
+sam=kumar/2
+kuma=sam+(sam/2)
+print("the remaining sugar candy with kumar is",kuma)
+sam=kumar-kuma
+print("the remaining sugar candy with sam is",sam)
+
+"""with three times of 36.32 u have to add 56.19 and subtract 10 from the total and print the result"""
+res=(3*36.32)+56.19-10
+print(res)
+
+"""multiply one positive number with one negative floting number and print the output"""
+result=5*-4.5
+print(result)
+
+""" swap two numbers with temp variable"""
+a=5
+b=10
+temp=a
+a=b
+b=temp
+print(a,b)
+
+""" swap two numbers without temp variable"""
+a=5
+b=10
+a=a+b
+b=a-b
+a=a-b
+print(a,b)
+
+""" Area of a rectangle"""
+rectl=10
+rectb=20
+print(rectl*rectb)
+
+"""perimeter of a rectangle"""
+rectl=10
+rectb=20
+print(2*(rectl+rectb))
+
+#type( )
+
+type("a")
+<class 'str'>
+>>> type(90.0)
+<class 'float'>
+>>> Type(2)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    Type(2)
+
+type('True')
+<class 'str'>
+>>> type(True)
+<class 'bool'>
+
+id("sam")
+2392697231664
+>>> isinstance(90,int)
+True
+>>> isinstance("a",str)
+True
+>>> isinstance(90.0,int)
+False
+
+num=678
+>>> 678=n1
+SyntaxError: cannot assign to literal
+
+#print statement
+
+a=90
+print("the value of a is:"+str(a))
+print("the value of a is:",a)
+b="1000"
+print("the value of a :"+b)
+
+
+print("the value of a is:"+a)
+
+#sep,end
+
+print("its","a","good","day",end=' ')
+print("all","is","good",sep="@@",end='')
+print("its","a","good","day",end=' ** ')
+print("all","is","good",end=' ')
+
+OPERATORS:
+
+#arithmetic operators
+
+>>>10%3
+1
+>>> 10/3
+3.3333333333333335
+>>> 10//3
+3
+
+#comparison operators
+
+>>>10<34
+True
+>>> 10!=20
+True
+>>> 10<=2
+False
+>>> 10<=20
+True
+>>> 10==90
+False
+
+#logical operators
+
+10>1 and 10<2
+False
+>>> 10>3 and 10<80
+True
+>>> 10>1 or 10>89
+True
+>>> not(10==10)
+False
+
+#multiple inputs
+
+n=int(input("size:"))
+a=list(map(int,input("numbers").split()))[:n]
+print(a)
+
+n1,n2=int(input("enter:")),int(input("enter:"))
+print(n1*n2)
+
+a,b=input("enter:").split(",")
+print(a+b)
+
+a,b=input("enter:").split()
+print(a*3)
+
+
+
+
+
+
