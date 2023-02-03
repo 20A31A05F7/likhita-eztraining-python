@@ -1,0 +1,32 @@
+BITWISE OPERATORS:
+
+o's ,1's
+
+0-1 or ON -OFF or True -False
+
+&
+|
+~
+XOR
+<<
+>>
+
+CONDITIONAL STATEMENTS
+if
+if-else
+else-if
+else-if ladder
+nested if
+
+
+while loop
+
+while(condition):
+    
+
+for loop
+
+for i in range(0,n-1)
+
+
+
