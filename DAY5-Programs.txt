@@ -1,0 +1,222 @@
+import random as r
+x=' have a nice day'
+print(r.sample(x,2))
+
+#everytime it gives different output
+a=[1,2,3,4,5,6]
+r.shuffle(a)
+print(a)
+
+a=[1,2,4,6,7,9]
+print(r.choice(a))
+
+b="hi hello"
+print(r.choice(b))
+
+a=r.random()    #b/w 0.0 &1.0 includes 0.0 ,1.0 excludes
+print(a)
+
+print(r.randrange(20,30)
+
+a=[10,59,89,80,45,67]
+print(r.choices(a,k=10)
+
+s="Good day"
+print(r.choices(s,k=3))
+
+
+print(r.uniform(5,100))
+#float value
+#returns any random no b/w the range
+#includes range values
+
+
+n=dir(r)
+print(n)
+
+
+
+#display whole year calendar
+
+import calendar 
+print("FULL CALENDAR")
+print(calendar.calendar(2020))
+
+print("PARTICULAR MONTH")
+print(calendar.month(2020,3))
+
+print("set first day of week:")
+calendar.setfirstweekday(calendar.FRIDAY)
+print(calendar.month(2023,12))
+
+
+#display date time 
+
+import datetime
+a=datetime.datetime.now()
+print(a)
+
+sv=a.strftime("%y")
+fv=a.strftime("%Y")
+
+print("year short version:",sv)
+print("year full version:",fv)
+
+
+#without arg without return value
+
+def sample():      #function definition or description
+   print("hi hello")
+   print("good day")
+print("great day")
+sample()       #function call
+
+
+def mul():
+    a,b,c=map(int,input("enter:").split())
+    prod=a*b*c
+    print(prod)
+mul()
+
+#without arg with return value
+
+def sum():
+    a,b=map(int,input("enter:").split(","))
+    sum=a+b
+    return sum
+res=sum()
+print(res)
+
+
+#with arg without return value:
+
+#static input
+def mul(a,b,c):
+    prod=a*b*c
+    print(prod)
+mul(3,4,5)
+
+#user input
+def mul(n1,n2,n3):
+    prod=n1*n2*n3
+    print(prod)
+a,b,c=map(int,input("enter:").split(","))
+mul(a,b,c)
+
+
+#with arg , with return value
+
+#static input
+def mul(a,b,c):
+    prod=a*b*c
+    return prod
+res=mul(3,4,5)
+print(res)
+
+#user input
+def mul(n1,n2,n3):
+    prod=n1*n2*n3
+    return prod
+a,b,c=map(int,input("enter:").split(","))
+res=mul(a,b,c)
+print(res)
+
+
+#factors of a given number
+#with arg without return value
+def factors(n):
+  for i in range(1,n+1):
+    if(n%i==0):
+        print(i,end=" ")
+n=int(input("enter:"))
+factors(n)
+
+
+#with arg without return 
+#multi_table
+def multi_table(n):
+ for i in range(1,11):
+    print(i, "X", n, "=", i*n )
+a=int(input("Table:"))
+multi_table(a)
+
+#without arg without return value
+def lemons():
+   if(n<21):
+    print("need to buy:",21-n)
+   elif(n>21):
+    print("exceeded lemons:",n-21)
+   else:
+    print("equal to 21")
+n=int(input("lemons in hand:"))
+lemons()
+
+
+#with arg ,with return value
+#sum of digits of a given number
+def digits(n):
+  sum=0
+  while(n!=0):
+     i=n%10
+     sum=sum+i
+     n=n//10
+  return sum
+n=int(input("Enter:"))
+res=digits(n)
+print(res)
+
+RECURSION :
+
+def display():
+      n=int(input("enter:"))
+      if(n==1):
+         display()
+      else:
+         print("over")
+display()
+
+
+#factorial of a number
+
+def fact(n):
+  if(n==0):
+    return 1
+  else:
+    return n*fact(n-1)
+
+n=int(input("enter:"))
+res=fact(n)
+print(res)
+         
+#fibonacci series
+
+n=int(input("Enter number:"))
+a=0
+b=1
+sum=0
+count=1
+
+while(count<=n):
+    print(sum,end=' ')
+    count+=1
+    a=b
+    b=sum
+    sum=a+b
+
+def add_sub(x,y):
+    sub=x-y
+    add=x+y
+    return sub,add
+res1,res2=add_sub(20,10)
+print(res1)
+print(res2)
+
+#variable length method
+
+def sum(*a):
+ c=0
+ for i in a:
+   c=c+i
+ print(c)
+sum(2,1,3,5,6)
+
