@@ -1,0 +1,104 @@
+EXCEPTION HANDLING:
+
+a=90
+b=0
+
+try:     #u r telling this may have error, u try
+    print(a/b)
+
+#except exception:# u saying if error there i handle
+#print("cant divide by zero")
+
+except Exception as e:
+    print("number can't divided by zero-",e) #this will  print error also
+
+#to check your program execution goes till end or not
+print("bye")
+
+#finally
+
+a=10
+b=0
+
+try:
+    print("resource open")
+    print(a/b)
+
+except Exception as e:
+    print("number cant be divided by zero-",e)
+
+finally:  #will get executed if there is error or not
+    print("resource closed")
+
+#specific errors
+
+try:
+    b=int(input("enter number:"))
+    print("resource open")
+    print(a/b)
+except ZeroDivisionError as e:
+    print("number can't be divided by zero-",e)
+except ValueError as e:
+    print("Invalid input-",e)
+except Exception as e:
+    print("other error-",e) #if not any above errors
+finally:
+    print("resource closed")
+
+#raise used to interrupt normal program flow and raise error
+
+x=101
+if(x%2!=0):
+    raise Exception("x should be even")
+else:
+    print("x is even number...correct")
+
+
+OOPS:
+
+class computer:       #class definition
+    def config(self):    #config is a function
+        print("YES")
+
+lenova=computer()    #object1
+lenova.config()
+
+dell=computer()     #object2
+dell.config()
+
+#constructor
+
+class Employee():
+    def __init__(self,name,id): 
+        self.name=name
+        self.id=id
+    def display(self):          
+        #print("ID:%d \n Name: %S"  %(self.id,self.name))
+
+        print(self.id,self.name)
+
+emp1=Employee("likki",101)
+emp2=Employee("mehar",102)
+
+emp1.display()
+emp2.display()
+
+
+#variables and var.access in class and method
+
+class computer():
+    a=10
+    b=90
+    print("class variables inside class:",a)
+
+    def config(self):   #config is a function
+        c=100
+        print("YES")
+        print("Instance access:",self.b)
+
+lenova=computer()
+print(lenova.a)
+print(lenova.a+lenova.b)
+dell=computer()
+print("dell",dell.b)
+lenova.config()
