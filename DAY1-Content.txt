@@ -1,83 +1,43 @@
-->python is famous in the market and it is called as language in future.
+Lambda Function:
 
-->It supports current technologies and upcoming technologies.
-
-MEDIUMS:
-
-IDLE - Integrated Development Learning Environment
-jupyter notebook
-Anaconda
-Vscode
-
-->python is a scripted language
-
-VALID VARIABLE NAMES 
-
-num1=300
-_1num=54
-sum_one=987
-
-INVALID
-
-4x=56
-1num=98
-7=20
-
-->python is case -sensitive
-
-Type(87)- error
-
-
-DATATYPES:
-
-numerical - int,float,complex
-boolean-true false
-sequence-string,list,tuple,dict,set
-
-TYPE CONVERSION:
-
-converting one datatype to another.
-
->id(90) - address
->>>isinstance(78,int) 
-True
-
-
-OPERATORS PRECEDENCE AND ASSOCIATIVITY LAW:
-
-every operator has its own priority
-we can use bodmas rule
-if there is same priority operators present in expression, evaluation happens left to right except assignment operator right to left
-
-arithmetic- 
-+,-,*,/,//
-//- floor division-integer
-%- rem
-
-comparison-
-==,!=,<,<,<=,>=
-
-logical-
-and ,or,not
-
-bitwise-
-and,or,not,xor,>>,<<
-
-MULTIPLE WAYS TO TAKE TO TAKE TWO/MORE INPUTS IN SAME LINE
-
-n,m=int(input("enter")),int(input("enter"))
-
-seperated by commas
-a,b=input("enter:).split(",")
-
-seperated by space
-a,b=input("enter:).split()
+  It is called as anonymous function.
+ when we want to use  function concept without using function name ,there we apply concept of lambda function.
 
 
 
+FOUR PILLARS OF OOPS:
 
+1)Abstraction
+2)Encapsulation
+3)Inheritance
+4)Polymorphism
 
+1)Abstraction:
+Hiding the implementation part showing what is required for the users is called as abstraction.
+Eg: exe file
 
+We can make class or method as abstract ,opposite to abstract is concrete .
+    
 
+2)Encapsulation:
+Binding data and function  into a single entity
+public-- one class info can be accessed by any other class
+private-- can be used where it is declared ?no in inherited class
+protected-- can be accessed only where it got declared ... whichever class inherited from this class there also we can use
 
+public--- low level data protection
+private--medium level
+protected---high level
 
+3)Inheritance:
+Base class and derived class
+Derived class inherits properties from base class
+Derived class - child class
+Base class - Parent class
+
+TYPES:
+1) single inheritance
+2)multiple inheritance
+3)Multi-level inheritance
+4)Heirarchial inheritance
+5)Hybrid inheritance
