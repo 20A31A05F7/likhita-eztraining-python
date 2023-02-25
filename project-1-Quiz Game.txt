@@ -1,0 +1,48 @@
+q1="""In which state Taj Mahal is located?
+      a)Uttar pradesh
+      b)uttarakhand
+      c)Rajasthan
+      d)Madhya pradesh"""
+q2="""Who was known as Iron man of India?
+      a)Govind Ballabh Pant
+      b)Jawaharlal Nehru
+      c)Subhash Chandra Bose
+      d)Sardar Vallabhbhai Patel"""
+q3="""Jude Felix is a famous Indian player in which of the fields?
+      a)Volleyball
+      b)Tennis
+      c)Football
+      d)Hockey"""
+q4="""Which is the highest peak in the world?
+      a)Kanchenjunga
+      b)K2
+      c)Mount Everest
+      d)Pir panjal"""
+q5="""Which of the following was Satyajit Ray associated with?
+      a)Classical music
+      b)Commercial art
+      c)Film Direction
+      d)Classical dance"""
+questions={q1:"a",q2:"d",q3:"d",q4:"c",q5:"c"}
+name=input("what is ur name:")
+print("hello", name ,"welcome to the quiz")
+score=0
+for i in questions:
+    print()
+    print(i)
+    flag1=input("Do you want to skip this question (yes/no):")
+    if flag1=="yes":
+        continue
+    ans=input("enter your answer:")
+    if ans==questions[i]:
+        print("wow! you got one point")
+        score=score+1
+        print("your current score is:",score)
+    else:
+        print("wrong answer,u lost 1 point")
+        score=score-1
+        print("ur current score is:",score)
+    flag2=input("Do u want to quit (yes/no):")
+    if flag2=="yes":
+        break
+print("your total score:",score)
