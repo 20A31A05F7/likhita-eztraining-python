@@ -1,171 +1,116 @@
-int1=int(input("enter the 1st integer:"))
-int2=int(input("enter the 2nd integer:"))
-int3=int(input("enter the 3rd integer:"))
-print("            ")
-float1=float(input("enter the 1st floating number:"))
-float2=float(input("enter the 2nd floating number:"))
-float3=float(input("enter the 3rd floating number:"))
-print("            ")
-str1=(input("enter the 1st string:"))
-str2=(input("enter the 2nd string:"))
-print("            ")
-complex1=complex(input("enter the complex number:"))
+#Anonymous function
 
-print("First Integer:",int1)
-print("second Integer:",int2)
-print("third Integer:",int3)
-print("     ")
-print("First float:",float1)
-print("second float:",float2)
-print("third float:",float3)
-print("       ")
-print("first string:"+str1)
-print("second string:"+str2)
-print("    ")
-print("complex:",complex1)
+l=[1,2,3]
 
-"""kumar is buying 75 kgs of sugar candy and half of it he gives to his friend Sam.
-Sam returns to kumar half of it what he got.how much does kumar and sam have"""
-kumar=int(input("enter sugar candy with kumar in kgs:"))
-sam=kumar/2
-kuma=sam+(sam/2)
-print("the remaining sugar candy with kumar is",kuma)
-sam=kumar-kuma
-print("the remaining sugar candy with sam is",sam)
+r=list(map(lambda x:x+x,l))
+print(r)
 
-"""with three times of 36.32 u have to add 56.19 and subtract 10 from the total and print the result"""
-res=(3*36.32)+56.19-10
+
+#map- helps to create iteration
+
+res=list(map(lambda l:pow(l,2),l))
 print(res)
 
-"""multiply one positive number with one negative floting number and print the output"""
-result=5*-4.5
-print(result)
-
-""" swap two numbers with temp variable"""
-a=5
-b=10
-temp=a
-a=b
-b=temp
-print(a,b)
-
-""" swap two numbers without temp variable"""
-a=5
-b=10
-a=a+b
-b=a-b
-a=a-b
-print(a,b)
-
-""" Area of a rectangle"""
-rectl=10
-rectb=20
-print(rectl*rectb)
-
-"""perimeter of a rectangle"""
-rectl=10
-rectb=20
-print(2*(rectl+rectb))
-
-#type( )
-
-type("a")
-<class 'str'>
->>> type(90.0)
-<class 'float'>
->>> Type(2)
-Traceback (most recent call last):
-  File "<pyshell#14>", line 1, in <module>
-    Type(2)
-
-type('True')
-<class 'str'>
->>> type(True)
-<class 'bool'>
-
-id("sam")
-2392697231664
->>> isinstance(90,int)
-True
->>> isinstance("a",str)
-True
->>> isinstance(90.0,int)
-False
-
-num=678
->>> 678=n1
-SyntaxError: cannot assign to literal
-
-#print statement
-
-a=90
-print("the value of a is:"+str(a))
-print("the value of a is:",a)
-b="1000"
-print("the value of a :"+b)
+name="sam"
+(lambda name:print(name))(name)
 
 
-print("the value of a is:"+a)
-
-#sep,end
-
-print("its","a","good","day",end=' ')
-print("all","is","good",sep="@@",end='')
-print("its","a","good","day",end=' ** ')
-print("all","is","good",end=' ')
-
-OPERATORS:
-
-#arithmetic operators
-
->>>10%3
-1
->>> 10/3
-3.3333333333333335
->>> 10//3
-3
-
-#comparison operators
-
->>>10<34
-True
->>> 10!=20
-True
->>> 10<=2
-False
->>> 10<=20
-True
->>> 10==90
-False
-
-#logical operators
-
-10>1 and 10<2
-False
->>> 10>3 and 10<80
-True
->>> 10>1 or 10>89
-True
->>> not(10==10)
-False
-
-#multiple inputs
-
-n=int(input("size:"))
-a=list(map(int,input("numbers").split()))[:n]
-print(a)
-
-n1,n2=int(input("enter:")),int(input("enter:"))
-print(n1*n2)
-
-a,b=input("enter:").split(",")
-print(a+b)
-
-a,b=input("enter:").split()
-print(a*3)
+#write a program after creating a list with even numbers within the range 1 to 15 ,now apply lambda function and create a new list which should have square roots of the elements.
+import math
+l=[]
+for i in range(1,15):
+    if(i%2==0):
+        l.append(i)
+print(l)
+r=map(lambda x:math.sqrt(x),l)
+print(list(r))
 
 
+#ABSTRACTION
+from abc import ABC,abstractmethod
+class abstractdemo(ABC):
+       @abstractmethod #called decorator to make the method(function) abstract one
+       def display(self):
+           None
+       @abstractmethod
+       def show(self):
+            None
+#changing abstract to concrete
+class demo(abstractdemo):
+    def display(self):
+        print("Abstraction method")
+    def show(self):
+        print("2nd function")
+obj=demo()
+obj.display()
+obj.show()
+
+#example
+class A():
+    n=int(input())
+class B(A):
+    def display(self):
+        c=self.n+70
+        print(c)
+obj=B()
+obj.display()
+
+#multiple inheritance
+
+class mom:
+    def mdisplay(self):
+        print("mom class")
+class dad:
+    def ddisplay(self):
+        print("dad class")
+class child(mom,dad):
+    def cdisplay(self):
+        print("child class")
+c1=child()
+c1.cdisplay()
+c1.ddisplay()
+c1.mdisplay()'''
 
 
+#multilevel inheritance
 
+class grandparent:
+    def vuw(self):
+        print("grand Parent class")
+class parent(grandparent):
+    def chow(self):
+        print("parent class")
+class child(parent):
+    def display(self):
+        print("child class")
+c=child()
+c.display()
+c.chow()
+c.vuw()
 
+#Hybrid inheritance
+class parent:
+    def display(self):
+        print("parent class")
+class child1(parent):
+    def clshow(self):
+        print("child1")
+class child2(parent):
+    def c2show(self):
+        print("child2")
+class kid1(child1):
+    def k1display(self):
+        print("kid1 class")
+class kid2(child2):
+    def k2display(self):
+        print("kid2 class")
+class kidd1(child2):
+    def k1show(self):
+        print("kidd1 class")
+class kidd2(child2):
+    def k2show(self):
+        print("kidd2 class")
+c1=kid1()
+c1.k1display()
+c1.display()
+c2=kid2()
